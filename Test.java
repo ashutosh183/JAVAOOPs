@@ -7,7 +7,10 @@ class Car{
 
       public void setModel(String model)
       {
-            this.model = model;
+            String validModel = model;
+            if(validModel.equals("Porsche 911")){
+                  this.model = model;
+            }
       }
 
       public void setEnginePower(String enginePower){
