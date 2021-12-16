@@ -4,7 +4,18 @@ class BankDetails{
       private String customerName;
       private String customerEmailAddress;
       private String customerPhoneNumber;
-
+      BankDetails(){
+            //CALLING THE PARAMETEIZED CONSTRUCTOR FROM DEFAULT CONSTRUCTOR
+            //this("567328903782", 4255662, "Ashutosh", "ashutoshdev16@gmail.com", "6384137446");
+            System.out.println("Default constructor called");
+      }
+      BankDetails(String accountNumber, double accountBalance, String customerName, String customerEmailAddress, String customerPhoneNumber){
+            this.accountNumber = accountNumber;
+            this.accountBalance = accountBalance;
+            this.customerName = customerName;
+            this.customerEmailAddress = customerEmailAddress;
+            this.customerPhoneNumber = customerPhoneNumber;
+      }
       public void setAccountNumber(String accountNumber){
             this.accountNumber = accountNumber;
       }
@@ -62,6 +73,12 @@ public class Account{
             System.out.println(customer.getCustomerName());
             System.out.println(customer.getAccountNumber());
             System.out.println(customer.getAccountBalance());
+            // private String accountNumber;
+            // private double accountBalance;
+            // private String customerName;
+            // private String customerEmailAddress;
+            // private String customerPhoneNumber;
+            BankDetails ashutoshAccount = new BankDetails("56432714323", 56333356435D, "Ashutosh Pandey", "ashutoshkumarpandey183@gmail.com", "6436563912");
 
       }
 }
