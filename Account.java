@@ -10,9 +10,9 @@ class BankDetails{
             System.out.println("Default constructor called");
       }
       BankDetails(String accountNumber, double accountBalance, String customerName, String customerEmailAddress, String customerPhoneNumber){
-            this.accountNumber = accountNumber;
-            this.accountBalance = accountBalance;
-            this.customerName = customerName;
+            setAccountNumber(accountNumber);
+            setAccountBalance(accountBalance);
+            setCustomerName(customerName);
             this.customerEmailAddress = customerEmailAddress;
             this.customerPhoneNumber = customerPhoneNumber;
       }
